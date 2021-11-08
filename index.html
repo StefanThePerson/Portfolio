@@ -3,9 +3,20 @@
 <head>
   <title>Portfolio - Michael Kornakiewicz</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="functions.js"></script>
 </head>
 <link rel="icon" type="image/png" href="images/favicon.png">
-<body>
+<body id="checker" onload="setTimeout(noOverflow, 3500)">
+  <!-- Begin: Loadscreen -->
+  <div id="bigContainer">
+    <div id="containerRotate">
+      <div id="centerRotateW"></div>
+      <div id="centerRotateB"></div>
+    </div>
+    <div id="topPart"></div>
+    <div id="botPart"></div>
+  </div>
+  <!-- End: Loadscreen -->
   <header class="headersegment">
     <table>
       <tr>
