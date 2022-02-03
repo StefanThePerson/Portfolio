@@ -1,0 +1,116 @@
+#bigContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: -100vh;
+}
+#containerRotate {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transform: rotate(90deg);
+  animation-name: rotateBig;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes rotateBig {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+#centerRotateW {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+  width: 15vh;
+  height: 30vh;
+  background-color: black;
+  border-right: solid 3vh red;
+  border-top: solid 3vh red;
+  border-bottom: solid 3vh red;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  animation-name: centerW;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+@keyframes centerW {
+  from {
+    transform: translate(0, -50%);
+  }
+  to {
+    transform: translate(0, -210vh);
+  }
+}
+#centerRotateB {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-18vh, -50%);
+  width: 15vh;
+  height: 30vh;
+  background-color: white;
+  border-left: solid 3vh red;
+  border-top: solid 3vh red;
+  border-bottom: solid 3vh red;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  animation-name: centerB;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+@keyframes centerB {
+  from {
+    transform: translate(-18vh, -50%);
+  }
+  to {
+    transform: translate(-18vh, 210vh);
+  }
+}
+#topPart {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: calc(50vh - 50px);
+  background-color: white;
+  border-bottom: solid 50px red;
+  animation-name: topScreen;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+@keyframes topScreen {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -210vh;
+  }
+}
+#botPart {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: calc(50vh - 50px);
+  background-color: black;
+  border-top: solid 50px red;
+  animation-name: botScreen;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+@keyframes botScreen {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-left: 210vh;
+  }
+}
